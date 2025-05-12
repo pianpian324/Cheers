@@ -1,0 +1,9 @@
+# .render.yaml
+services:
+  - type: web
+    name: praise-backend
+    env: node
+    rootDirectory: ./backend
+    buildCommand: npm install
+    startCommand: node app.js
+    # 注意：这里不再包含敏感信息
